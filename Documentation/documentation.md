@@ -1,6 +1,6 @@
 
 
-<center>
+
 
 # DOCUMENTATION_PPE_PARKING
 
@@ -10,11 +10,11 @@ Intitulé du projet sur [http://enseignement.alexandre-mesle.com/PPE/parking/](h
 
 Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.com/Fourkap/PPE_Parking)
 
-</center>
+
 
 * * *
 
-<center>
+
 
 # Technologies utilisés
 
@@ -25,12 +25,14 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 -Pour le Front-End: HTML5, CSS3, JavaScript, SCSS, JQuery  
 -Logiciel de présentation: Microsoft POWERPOINT
 
-</center>
+
 
 * * *
 
-<center>
+
 
 # Liste des taches
 
-</center>
+-	Faire un système de demande d'inscription (simple formulaire avec ajout dans la table user mais avec un niveau non validé)
+
+
