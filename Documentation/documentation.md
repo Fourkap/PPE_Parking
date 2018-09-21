@@ -35,6 +35,8 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 # Liste des taches
 
+
+- Création d'une documentation comprenant la liste des taches, les technologies à utilisait, les maquettes et le MCD 
 -	Faire un système de demande d'inscription (simple formulaire avec ajout dans la table user mais avec un niveau non validé)
 -	Mettre en place une fonction mot de passe perdu (fonctionnement avec token ????) (alexandre doit expliquer ce fonctionnement)
 -	Afficher la place qui est attribuée et celles qui l’ont été par le passé ()
