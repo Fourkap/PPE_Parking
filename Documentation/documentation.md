@@ -23,23 +23,19 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 -Pour la base de donnée: MySQL  
 -Pour le Back-end: PHP  
 -Pour le Front-End: HTML5, CSS3, JavaScript, SCSS, JQuery  
-<<<<<<< HEAD
 -Logiciel de présentation: Microsoft POWERPOINT
 -Outil de collaboration: Github
 
 
 
 
-* * *;
-=======
--Logiciel de présentation: Microsoft POWERPOINT<br>
--Outil de collaboration: Github
 
 
 
 
 
->>>>>>> 0492e279bbe014141ad91d928877592a768f498a
+
+
 
 
 
