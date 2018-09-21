@@ -24,6 +24,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 -Pour le Back-end: PHP  
 -Pour le Front-End: HTML5, CSS3, JavaScript, SCSS, JQuery  
 -Logiciel de présentation: Microsoft POWERPOINT
+-Outil de collaboration: Github
 
 
 
@@ -48,10 +49,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 -	Pouvoir afficher l’historique des réservations (afficher avec boucle la table qui relient les tables 'users' et 'places')
 -	Pouvoir gérer manuellement l’attribution des place ()
 -	Pouvoir gérer manuellement la file d’attente ()
-- Faire un système aléatoire d’attribution de place 
+- Faire un système aléatoire d’attribution de place
 - Faire un système de compte à rebours quand un user à une place et pouvoir modifier le temps attribué
 - Faire un système de liste d’attente s’il n’y a plus de place dispo
 - Quand compte à rebours finit et que l’user nécessite une nouvelle place il revient en file d’attente automatiquement
-
-
-
