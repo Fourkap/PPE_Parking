@@ -65,4 +65,4 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 # Maquettes
 ![Image Inscription]
-https://github.com/Fourkap/PPE_Parking/blob/master/Mockup%20ppe_parking/Maquette_inscription.png
+(https://github.com/Fourkap/PPE_Parking/blob/master/Mockup%20ppe_parking/Maquette_inscription.png)
