@@ -64,4 +64,5 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 - Quand compte à rebours finit et que l’user nécessite une nouvelle place il revient en file d’attente automatiquement
 
 # Maquettes
-![Image Inscription](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Maquette_inscription.png)
+Page d'accueil (index.php)
+![Image Index](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/indexphp.png)
