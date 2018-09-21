@@ -62,3 +62,5 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 - Faire un système de compte à rebours quand un user à une place et pouvoir modifier le temps attribué
 - Faire un système de liste d’attente s’il n’y a plus de place dispo
 - Quand compte à rebours finit et que l’user nécessite une nouvelle place il revient en file d’attente automatiquement
+
+# Maquettes
