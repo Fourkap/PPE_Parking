@@ -23,6 +23,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 -Pour la base de donnée: MySQL  
 -Pour le Back-end: PHP  
 -Pour le Front-End: HTML5, CSS3, JavaScript, SCSS, JQuery  
+<<<<<<< HEAD
 -Logiciel de présentation: Microsoft POWERPOINT
 -Outil de collaboration: Github
 
@@ -30,11 +31,23 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 
 * * *;
+=======
+-Logiciel de présentation: Microsoft POWERPOINT<br>
+-Outil de collaboration: Github
+
+
+
+
+
+>>>>>>> 0492e279bbe014141ad91d928877592a768f498a
 
 
 
 # Liste des taches
 
+
+- Création d'une documentation comprenant la liste des taches, les technologies à utilisait, les maquettes et le MCD 
+- Mise en place du projet sur Github et attributions des accès aux différents collaborateurs
 -	Faire un système de demande d'inscription (simple formulaire avec ajout dans la table user mais avec un niveau non validé)
 -	Mettre en place une fonction mot de passe perdu (fonctionnement avec token ????) (alexandre doit expliquer ce fonctionnement)
 -	Afficher la place qui est attribuée et celles qui l’ont été par le passé ()
