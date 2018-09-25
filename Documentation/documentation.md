@@ -18,13 +18,13 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 # Technologies utilisés
 
--Pour le MCD graphique: MOCODO  
--Pour la maquette du site: Balsamiq  
--Pour la base de donnée: MySQL  
--Pour le Back-end: PHP  
--Pour le Front-End: HTML5, CSS3, JavaScript, SCSS, Bootstrap<br>
--Logiciel de présentation: Microsoft POWERPOINT<br>
--Outil de collaboration: Github
+- Pour le MCD graphique: MOCODO  
+- Pour la maquette du site: Balsamiq  
+- Pour la base de donnée: MySQL  
+- Pour le Back-end: PHP  
+- Pour le Front-End: HTML5, CSS3, JavaScript, SCSS, Bootstrap<br>
+- Logiciel de présentation: Microsoft POWERPOINT<br>
+- Outil de collaboration: Github
 
 
 
