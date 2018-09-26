@@ -68,3 +68,5 @@ Page d'accueil (index.php)
 ![Image Index](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/indexphp.png)
 Page d'Inscription (inscription.php)
 ![Image Inscription](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Inscription.png)
+Page Admin File d'attente
+![Image admin_file_d'attente](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/admin_page_attente.png)
