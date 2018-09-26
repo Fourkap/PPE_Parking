@@ -72,7 +72,8 @@ Page d'Admin
 ![Image admin](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Admin.png)
 Page Admin File d'attente
 
-![Image admin_file_d'attente](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/admin_page_attente.png)
+![Image admin_file_d'attente(https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/admin_page_attente.png)
+
 Page Admin Gestion des utilisateurs
 ![Image admin_gestion_util]
 (https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Admin_inscription.png)
