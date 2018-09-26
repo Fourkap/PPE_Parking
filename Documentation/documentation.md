@@ -86,3 +86,29 @@ Page Utilisateurs
 
 Page modifier données utilisateur
 ![Image util modifier](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/modifier_gestion_utilisateur.png)
+
+
+# MCD 
+
+Nous avons dans ce MDC :
+	Trois entités : USERS, RESERVATION et PLACE.
+	Deux associations : RESERVER et CONCERNER.
+
+Nous pouvons apporter des précisions sur le rôle de certaines données.
+Il y a dans chaque entités un identifiant afin que chaque élément présent dans chacune des entités soit différentiable et identifiable clairement et sans doute.
+Ensuite on a un autre type de données qui vont permettre de stocker des informations pratiques concernant chaque élément de l'entité. Voici la liste de toutes les données que l'on peut ranger dans cette catégorie : nom, prénom, num_p.
+Dans une troisième et dernière catégorie on retrouve les données qui vont nous servire pour les fonctionnalités demandées dans le sujet. Voici la liste : mdp, niveau, etat_u, date_resa, date_debut, date_fin, etat_p.
+
+Dans ce projet nous avons plusieurs objectifs qui nécessite une architecture précise du mcd et plus tard de la base de données. En effet, les fonctionnalités suivantes ont demandé une réflexions préventive:
+ - un historique détaillé de réservation
+ - une liste d'attente autonome
+ - une approbation obligatoire de la part de l'admin à chaque création de compte
+ - les comptes sécurisés par un mot de passe
+
+Pour l'historique détaillé de réservation, il faut la présence des données suivantes : date_resa, date_debut, date_fin. En effet ces données placées dans l'entité RESERVATION vont nous permettre à chaque nouvelle entrée de dresser sans difficulté l'historique d'une place ou d'un utilisateur.
+
+Pour l'approbation, "niveau" intervient pour donner un grade aux utilisateurs. En effet le valeurs possibles seront "0,1,2 ou 3" respectivement "banni, en attente d'approbation, permis ou admin". Dans son espace, l'administrateur aura une interface qui lui presente les profils en attente d'approbation avec un bouton lui permettant de soit refuser une demande ou de l'approuver. Ce bouton changeant donc automatiquement le grade de l'utilisateur.
+
+Pour la liste d'attente autonome, premièrement la donnée "etat_p" va nous permettre de savoir facilement si une place est libre "1" ou occupée "2". Ensuite, une fois qu'on a rendu compte de l'état de chaque place du parking il est simple de vérifier s’il n'y a plus de place disponible, dans ce cas doit donc de mettre l'utilisateur voulant réserver une place en état de file d'attente. C'est là où la donnée "etat_u" nous est utile, car cette donnée aura comme valeur possible "1, 2 ou 3" signifiant respectivement "aucune place attribuée, une place attribuée et en attente", rendant compte de l'état actuel de l'utilisateur. Grâce à ces 2 données on va pouvoir maintenant dresser des listes en se servant de requête sélective pour isoler les utilisateurs en attente. On pourra dans un dernier temps ordonner la liste en fonction de l’ancienneté de "date_resa". On pourra même si souhaité donner le temps d'attente dans la file pour chacun des utilisateurs dans cette file.
+
+Et enfin la donnée "mdp" servira à stocker une version cryptée du mot de passe de l'utilisateur. Cette valeur sera comparée avec celle entrée par l'utilisateur à chaque action de celui-ci.
