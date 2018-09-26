@@ -88,26 +88,29 @@ Page modifier données utilisateur
 ![Image util modifier](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/modifier_gestion_utilisateur.png)
 
 
-# MCD 
+# Modèle Conceptuel des Données
 
 Nous avons dans ce MDC :
 	Trois entités : USERS, RESERVATION et PLACE.
 	Deux associations : RESERVER et CONCERNER.
 	
-![Image MCD](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/MDC%20Parking.png)
+![MCD PPE Parking](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/MDC%20PPE%20Parking.png)
 
 Nous pouvons apporter des précisions sur le rôle de certaines données.
 Il y a dans chaque entités un identifiant afin que chaque élément présent dans chacune des entités soit différentiable et identifiable clairement et sans doute.
 Ensuite on a un autre type de données qui vont permettre de stocker des informations pratiques concernant chaque élément de l'entité. Voici la liste de toutes les données que l'on peut ranger dans cette catégorie : nom, prénom, num_p.
-Dans une troisième et dernière catégorie on retrouve les données qui vont nous servire pour les fonctionnalités demandées dans le sujet. Voici la liste : mdp, niveau, etat_u, date_resa, date_debut, date_fin, etat_p.
+Dans une troisième et dernière catégorie on retrouve les données qui vont nous servire pour les fonctionnalités demandées dans le sujet. Voici la liste : mdp, niveau, mail, etat_u, date_resa, date_debut, date_fin, etat_p.
 
 Dans ce projet nous avons plusieurs objectifs qui nécessite une architecture précise du mcd et plus tard de la base de données. En effet, les fonctionnalités suivantes ont demandé une réflexions préventive:
  - un historique détaillé de réservation
- - une liste d'attente autonome
+ - une possibilité de changement de mot de passe
  - une approbation obligatoire de la part de l'admin à chaque création de compte
+ - une liste d'attente autonome
  - les comptes sécurisés par un mot de passe
 
 Pour l'historique détaillé de réservation, il faut la présence des données suivantes : date_resa, date_debut, date_fin. En effet ces données placées dans l'entité RESERVATION vont nous permettre à chaque nouvelle entrée de dresser sans difficulté l'historique d'une place ou d'un utilisateur.
+
+Concernant le changement de mot de passe c'est toujours une procédure délicate, en effet c'est une source d'usurpation de compte. Il faut donc un moyen sûr de contacter le demandeur. C'est ici que la donnée "mail" intervient, en effet une boîte mail est un endroit sécurisé par un mot de passe où l'on pourra contacter sans crainte la personne.
 
 Pour l'approbation, "niveau" intervient pour donner un grade aux utilisateurs. En effet le valeurs possibles seront "0,1,2 ou 3" respectivement "banni, en attente d'approbation, permis ou admin". Dans son espace, l'administrateur aura une interface qui lui presente les profils en attente d'approbation avec un bouton lui permettant de soit refuser une demande ou de l'approuver. Ce bouton changeant donc automatiquement le grade de l'utilisateur.
 
