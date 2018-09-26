@@ -65,19 +65,21 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 # Maquettes
 Page d'accueil (index.php)
+
 ![Image Index](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/indexphp.png)
 Page d'Inscription (inscription.php)
+
 ![Image Inscription](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Inscription.png)
 Page d'Admin
+
 ![Image admin](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Admin.png)
 Page Admin File d'attente
 
-![Image—admin_file_d'attente]
-(https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/admin_page_attente.png)
+![Imageadmin_file_d'attente](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/admin_page_attente.png)
 
 Page Admin Gestion des utilisateurs
-![Image admin_gestion_util]
-(https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Admin_inscription.png)
+
+![Image admin_gestion_util](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Admin_inscription.png)
 
 Page Utilisateurs 
 ![Image utili](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/utilisitateur.png)
