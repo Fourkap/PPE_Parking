@@ -93,6 +93,8 @@ Page modifier données utilisateur
 Nous avons dans ce MDC :
 	Trois entités : USERS, RESERVATION et PLACE.
 	Deux associations : RESERVER et CONCERNER.
+	
+![Image MCD](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/MDC%20Parking.png)
 
 Nous pouvons apporter des précisions sur le rôle de certaines données.
 Il y a dans chaque entités un identifiant afin que chaque élément présent dans chacune des entités soit différentiable et identifiable clairement et sans doute.
