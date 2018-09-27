@@ -63,6 +63,10 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 - Faire un système de liste d’attente s’il n’y a plus de place dispo
 - Quand compte à rebours finit et que l’user nécessite une nouvelle place il revient en file d’attente automatiquement
 
+
+séparation entre le nouveau et l'ancien pavé
+
+
 -	Création des pages constituant le site, suivant les maquettes (cf Maquettes) et en respectant le MVC. Page d’accueil, page d’inscription, page utilisateur, page d’administration.
 -	Elaboration du système d’inscription, connexion, ... Donc des fonctionnalités basiques d’un site. Sur les pages respectives.
 -	Mise en place des fonctionnalités de la page admin. Affichage et approbation des demandes d’inscriptions.
