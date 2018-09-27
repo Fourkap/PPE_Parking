@@ -65,8 +65,13 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 
 séparation entre le nouveau et l'ancien pavé
+## Liste pré-applicative 
+- Création d'une documentation comprenant la liste des taches, les technologies à utilisait, les maquettes et le MCD 
+- Mise en place du projet sur Github et attributions des accès aux différents collaborateurs
+- Mise en place d'un Trello pour un travail collaboratif. 
 ## Fonctions primaire de l'application
 
+-	Création du MCD et de la base de données (cf Partie Modèle Conceptuel des Données et Base de données)
 -	Création des pages constituant le site, suivant les maquettes (cf Maquettes) et en respectant l'architecture logicielle Modèle vue controlleur (MVC) Le modèle contient les données à afficher, la vue contient la présentation de l'interface graphique, le contrôleur contient la logique concernat les actions effectuer par l'utilisateur. Page d’accueil, page d’inscription, page utilisateur, page d’administration.
 -	Elaboration du système d’inscription, connexion, ... Donc des fonctionnalités basiques d’un site. Sur les pages respectives.
 -	Mise en place des fonctionnalités de la page admin. Affichage et approbation des demandes d’inscriptions.
