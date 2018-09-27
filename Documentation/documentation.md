@@ -39,7 +39,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 
 
-# Liste des taches
+# Liste des tâches
 
 
 - Création d'une documentation comprenant la liste des taches, les technologies à utilisait, les maquettes et le MCD 
