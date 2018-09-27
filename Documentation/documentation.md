@@ -16,7 +16,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 
 
-# Technologies utilisés
+# Technologies utilisées
 
 - Pour le MCD graphique: MOCODO  
 - Pour la maquette du site: Balsamiq  
