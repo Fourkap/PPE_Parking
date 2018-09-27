@@ -84,7 +84,7 @@ séparation entre le nouveau et l'ancien pavé
 -	Ajout des fonctionnalités de modification de la liste d’attente et de la liste des places.  
 -	Fonctionnalité d’attribution manuelle des places sur la page admin.
 -	Possibilité de la reinitialisation du mot de passe utilisateur via un système d'envoi de mail avec un fonctionnement de token, token qui est identique en base de donnée ainsi que dans le liens trouver dans l'email envoyer à l'utilisateur. 
-- 	Securité du site, du point de vue du front-end verification en javascript de tout les formulaires avec l'utilisation de Regex en repport avec le champs ex(email, adresse), verification lors de l'inscription du mot de passe indiquer avec une double verification. du point de vue du back-end sécurisation en php face aux injections SQL en protegant les requetes utilisations de requête préparée avec des variables liées, trouvable dans les librairies PDO et MySQLi. 
+- 	Securité du site, du point de vue du front-end verification en javascript de tout les formulaires avec l'utilisation de Regex en rapport avec le champs ex(email, adresse), verification lors de l'inscription du mot de passe indiquer avec une double verification. du point de vue du back-end sécurisation en php face aux injections SQL en protegant les requetes utilisations de requête préparée avec des variables liées, trouvable dans les librairies PDO et MySQLi. 
 
 # Plan du site
 ![image plan](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/plan_site.png)
