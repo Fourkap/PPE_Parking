@@ -65,7 +65,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 
 séparation entre le nouveau et l'ancien pavé
-## Fonction primaire du site 
+## Fonctions primaire de l'application
 
 -	Création des pages constituant le site, suivant les maquettes (cf Maquettes) et en respectant l'architecture logicielle Modèle vue controlleur (MVC) Le modèle contient les données à afficher, la vue contient la présentation de l'interface graphique, le contrôleur contient la logique concernat les actions effectuer par l'utilisateur. Page d’accueil, page d’inscription, page utilisateur, page d’administration.
 -	Elaboration du système d’inscription, connexion, ... Donc des fonctionnalités basiques d’un site. Sur les pages respectives.
@@ -76,7 +76,7 @@ séparation entre le nouveau et l'ancien pavé
 -	Ajout des fonctionnalités de modification de la liste d’attente et de la liste des places. Puis de réinitialisation des mots de passe. 
 -	Fonctionnalité d’attribution manuelle des places sur la page admin.
 Il reste la sécurité a mettre 
-
+## Fonctions secondaires de l'application
 # Plan du site
 ![image plan](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/plan_site.png)
 # Maquettes
