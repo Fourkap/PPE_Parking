@@ -138,7 +138,7 @@ Et enfin la donnée "mdp" servira à stocker une version cryptée du mot de pass
 Création de Trello un outils permettant un travail collaboratif
 ![Trello](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Capture%20d%E2%80%99%C3%A9cran%202018-09-27%20%C3%A0%2014.11.26.png)
 
-# Piste de réflexions techniques
+# Pistes de réflexions techniques
 
 -	Faire un système de demande d'inscription (simple formulaire avec ajout dans la table user mais avec un niveau 1 signifiant qu’il n’est pas validé par l’admin)
 -	Mettre en place une fonction mot de passe perdu (fonctionnement avec un systèle de token)
