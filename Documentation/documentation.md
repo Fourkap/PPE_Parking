@@ -16,7 +16,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 
 
-# Technologies utilisés
+# Technologies utilisées
 
 - Pour le MCD graphique: MOCODO  
 - Pour la maquette du site: Balsamiq  
@@ -63,7 +63,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 - Faire un système de liste d’attente s’il n’y a plus de place dispo
 - Quand compte à rebours finit et que l’user nécessite une nouvelle place il revient en file d’attente automatiquement
 # Plan du site
-![image plan](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Plan_site.png)
+![image plan](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/plan_site.png)
 # Maquettes
 Page d'accueil (index.php)
 
