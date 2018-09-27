@@ -119,6 +119,13 @@ Pour la liste d'attente autonome, premièrement la donnée "etat_p" va nous perm
 
 Et enfin la donnée "mdp" servira à stocker une version cryptée du mot de passe de l'utilisateur. Cette valeur sera comparée avec celle entrée par l'utilisateur à chaque action de celui-ci.
 
+# Base de données
+
+![table users.png](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/table%20users.png)
+
+![table place.png](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/table%20place.png)
+
+![table reservation.png](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/table%20reservation.png)
 
 # Outil de collaboration 
 Création de Trello un outils permettant un travail collaboratif
