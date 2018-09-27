@@ -78,7 +78,7 @@ séparation entre le nouveau et l'ancien pavé
 -	Elaboration du système de réservation aléatoire sur la page utilisateur. Ensuite l’affichage des places disponibles puis de l’historique des réservations.
 -	Mise en place du système de mise en attente. Et de l’affichage du rang dans la file sur la page utilisateur puis de la file en elle-même sur la page admin. 
 -	Sur la page admin, affichage de la liste d’attente puis de la liste de l’historique des réservations.
--	Securité sur le mot de passe en hashage soit en SHA-256.
+-	Securité sur le mot de passe en hashage en SHA-256.
 
 ## Fonctions secondaires de l'application
 -	Ajout des fonctionnalités de modification de la liste d’attente et de la liste des places.  
