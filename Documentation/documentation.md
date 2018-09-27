@@ -41,8 +41,6 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 # Liste des tâches
 
-on s'etait dit que pour modifier le nombre de place disponible dans le parking on pourrait simplement supprimer ou ajouter des lignes dans la table PLACE. Ce qui n'aurait pas été possible a cause des foreign key. On peut simplement ajouté un autre etat que ' disponible ' et 'occupé' dans la donnée etat_p. On peut mettre une troisième valeur possible a etat_p qui signifirait 'pas utilisable'. on aurait qu'a créer une table avec 1000 places donc 1000 id_p avec de base la valeur 'pas utilisable' et passer le nombre de place que l'on veut en 'disponible'.
-
 - Création d'une documentation comprenant la liste des taches, les technologies à utiliser, les maquettes et le MCD 
 - Mise en place du projet sur Github et attributions des accès aux différents collaborateurs
 -	Faire un système de demande d'inscription (simple formulaire avec ajout dans la table user mais avec un niveau non validé)
