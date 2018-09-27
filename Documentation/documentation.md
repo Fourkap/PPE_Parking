@@ -118,3 +118,8 @@ Pour l'approbation, "niveau" intervient pour donner un grade aux utilisateurs. E
 Pour la liste d'attente autonome, premièrement la donnée "etat_p" va nous permettre de savoir facilement si une place est libre "1" ou occupée "2". Ensuite, une fois qu'on a rendu compte de l'état de chaque place du parking il est simple de vérifier s’il n'y a plus de place disponible, dans ce cas doit donc de mettre l'utilisateur voulant réserver une place en état de file d'attente. C'est là où la donnée "etat_u" nous est utile, car cette donnée aura comme valeur possible "1, 2 ou 3" signifiant respectivement "aucune place attribuée, une place attribuée et en attente", rendant compte de l'état actuel de l'utilisateur. Grâce à ces 2 données on va pouvoir maintenant dresser des listes en se servant de requête sélective pour isoler les utilisateurs en attente. On pourra dans un dernier temps ordonner la liste en fonction de l’ancienneté de "date_resa". On pourra même si souhaité donner le temps d'attente dans la file pour chacun des utilisateurs dans cette file.
 
 Et enfin la donnée "mdp" servira à stocker une version cryptée du mot de passe de l'utilisateur. Cette valeur sera comparée avec celle entrée par l'utilisateur à chaque action de celui-ci.
+
+
+#Outil de collaboration 
+
+![Trello](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Capture%20d%E2%80%99%C3%A9cran%202018-09-27%20%C3%A0%2014.11.26.png)
