@@ -66,7 +66,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 
 séparation entre le nouveau et l'ancien pavé
 ## Liste pré-applicative 
-- Création d'une documentation comprenant la liste des taches, les technologies à utilisait, les maquettes et le MCD 
+- Création d'une documentation comprenant la liste des taches, les technologies à utilisait, les maquettes, le MCD et la base de données. 
 - Mise en place du projet sur Github et attributions des accès aux différents collaborateurs
 - Mise en place d'un Trello pour un travail collaboratif. 
 ## Fonctions primaire de l'application
