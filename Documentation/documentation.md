@@ -73,10 +73,14 @@ séparation entre le nouveau et l'ancien pavé
 -	Elaboration du système de réservation aléatoire sur la page utilisateur. Ensuite l’affichage des places disponibles puis de l’historique des réservations.
 -	Mise en place du système de mise en attente. Et de l’affichage du rang dans la file sur la page utilisateur puis de la file en elle-même sur la page admin. 
 -	Sur la page admin, affichage de la liste d’attente puis de la liste de l’historique des réservations.
--	Ajout des fonctionnalités de modification de la liste d’attente et de la liste des places. Puis de réinitialisation des mots de passe. 
--	Fonctionnalité d’attribution manuelle des places sur la page admin.
-Il reste la sécurité a mettre 
+-	Securité sur le mot de passe en hashage soit en SHA-256.
+
 ## Fonctions secondaires de l'application
+-	Ajout des fonctionnalités de modification de la liste d’attente et de la liste des places.  
+-	Fonctionnalité d’attribution manuelle des places sur la page admin.
+-	Possibilité de la reinitialisation du mot de passe utilisateur via un système d'envoi de mail avec un fonctionnement de token, token qui est identique en base de donnée ainsi que dans le liens trouver dans l'email envoyer à l'utilisateur. 
+- 	Securité du site, du point de vue du front-end verification en javascript de tout les formulaires avec l'utilisation de Regex en repport avec le champs ex(email, adresse), verification lors de l'inscription du mot de passe indiquer avec une double verification. du point de vue du back-end sécurisation en php face aux injections SQL en protegant les requetes utilisations de requête préparée avec des variables liées, trouvable dans les librairies PDO et MySQLi. 
+
 # Plan du site
 ![image plan](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/plan_site.png)
 # Maquettes
