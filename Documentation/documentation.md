@@ -142,6 +142,7 @@ Concernant le changement de mot de passe c'est toujours une procédure délicate
 Pour l'approbation, "niveau" intervient pour donner un grade aux utilisateurs. En effet le valeurs possibles seront "0,1,2 ou 3" respectivement "banni, en attente d'approbation, permis ou admin". Dans son espace, l'administrateur aura une interface qui lui presente les profils en attente d'approbation avec un bouton lui permettant de soit refuser une demande ou de l'approuver. Ce bouton changeant donc automatiquement le grade de l'utilisateur.
 
 Pour la liste d'attente autonome, premièrement la donnée "etat_p" va nous permettre de savoir facilement si une place est libre "1" ou occupée "2". Ensuite, une fois qu'on a rendu compte de l'état de chaque place du parking il est simple de vérifier s’il n'y a plus de place disponible, dans ce cas doit donc de mettre l'utilisateur voulant réserver une place en état de file d'attente. C'est là où la donnée "etat_u" nous est utile, car cette donnée aura comme valeur possible "1, 2 ou 3" signifiant respectivement "aucune place attribuée, une place attribuée et en attente", rendant compte de l'état actuel de l'utilisateur. Grâce à ces 2 données on va pouvoir maintenant dresser des listes en se servant de requête sélective pour isoler les utilisateurs en attente. On pourra dans un dernier temps ordonner la liste en fonction de l’ancienneté de "date_resa". On pourra même si souhaité donner le temps d'attente dans la file pour chacun des utilisateurs dans cette file.
+Une autre valeur possible de etat_p va nous permettre de moduler le nombre de place disponible. En effet "3" signifira que la place n'est "pas disponible" empechant sa reservation mais la gardant dans la table pour garder l'historique de reservation inchangé et encore utilisable sans conflit
 
 Et enfin la donnée "mdp" servira à stocker une version cryptée du mot de passe de l'utilisateur. Cette valeur sera comparée avec celle entrée par l'utilisateur à chaque action de celui-ci.
 
@@ -162,3 +163,24 @@ Et enfin la donnée "mdp" servira à stocker une version cryptée du mot de pass
 # Outil de collaboration 
 Création de Trello un outils permettant un travail collaboratif
 ![Trello](https://github.com/Fourkap/PPE_Parking/blob/master/Documentation/Mockup%20ppe_parking/Capture%20d%E2%80%99%C3%A9cran%202018-09-27%20%C3%A0%2014.11.26.png)
+
+# Piste de réflexions techniques
+
+•	Faire un système de demande d'inscription (simple formulaire avec ajout dans la table user mais avec un niveau 1 signifiant qu’il n’est pas validé par l’admin)
+•	Mettre en place une fonction mot de passe perdu (fonctionnement avec un systèle de token)
+•	Afficher la place qui est attribuée et celles qui l’ont été par le passé (afficher une table avec une requête cherchant dans la table réservation avec l’id_u)
+•	Un système de réservation de place (simple bouton qui entre une ligne dans la table réservation une ligne avec une date_resa et une id_p. Dans le cas où il y a au moins une place avec etat_p = 1 l’id_p est attribuée aléatoirement parmi elles)
+•	Afficher son rang dans la file d’attente (une requête qui sélectionne dans la table réservation toutes les réservations qui n’ont pas de date-debut, puis donne la position dans la table de cet utilisateur)
+•	Modification de mot de passe (simple formulaire qui modifie la table user en remplaçant la valeur mdp par celle entrée par l’utilisateur, avec vérification de l’ancien mot de passe et vérification de la saisie du nouveau)•	Faire un système de validation d'inscription (afficher avec boucle sur la page admin avec une requête dans la table user montrant le détail de chaque demande d’inscription. Puis deux boutons ‘accepter’ ou ‘refuser’ appliquant la valeur 2 ou 0 a la donnée niveau)
+•	Faire un système d'édition du nombre de place disponible dans le parking (deux éléments, un qui modifie dans la table PLACE le nombre de ligne dans la table avec pour etat_p une valeur de 3 signifiant que la place n’est pas utilisable. Le deuxième élément permettra de changer la valeur de la donnée etat_p par celle voulu pour moduler le nombre de place réellement utilisable)
+•	Un système d’édition de la liste des utilisateurs et permettre la modification de leur mot de passe (afficher avec boucle liste des utilisateurs avec bouton pour chacun qui envoie sur une page modification avec les infos de l’user)
+•	Pouvoir afficher la liste d’attente (afficher avec une boucle les valeurs présente dans la table RESERVATION n’ayant pas de valeur attribuée à la donnée date_debut)
+•	Pouvoir afficher l’historique des réservations (afficher avec boucle la table RESERVATION avec pour id_u celui de l’utilisateur)
+•	Pouvoir gérer manuellement l’attribution des place ()
+•	Pouvoir gérer manuellement la file d’attente ()
+•	Faire un système aléatoire d’attribution de place (une fonction sortant une valeur aléatoire dans l’ensemble des places ayant comme etat_p ‘disponible’
+•	Faire un système de compte à rebours quand un user à une place et pouvoir modifier le temps attribué (faire un compte a rebours avec la donnée date_fin, puis une requete qui peut modifier la valeur date_fin)
+•	Faire un système de liste d’attente s’il n’y a plus de place dispo (une requête qui, s’il n’y a pas au moins un (une requête qui, dans le cas où il n’y a pas de place avec etat_p = 1 l’id_p attribuée est celle de la réservation la plus ancienne parmi celle encore d’actualité (où date_fin n’a pas été dépassée)).
+•	Quand compte à rebours finit et que l’user nécessite une nouvelle place il revient en file d’attente automatiquement ( une requete qui ajout une ligne dans la table RESERVATION, avec pour date_resa la valeur de date_fin. 
+•	Crypter les mots de passe quand ils sont saisis dans la bdd ($requete->bindValue(':mdp',sha1($_POST['mdp']),PDO:: PARAM_STR);)
+
