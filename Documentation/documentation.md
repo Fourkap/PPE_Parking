@@ -49,7 +49,7 @@ Liens GitHub du projet [https://github.com/Fourkap/PPE_Parking](https://github.c
 -	Création du MCD et de la base de données (cf Partie Modèle Conceptuel des Données et Base de données)
 -	Création des pages constituant le site, suivant les maquettes (cf Maquettes) et en respectant l'architecture logicielle Modèle vue contrôleur (MVC) Le modèle contient les données à afficher, la vue contient la présentation de l'interface graphique, le contrôleur contient la logique concernant les actions effectu par l'utilisateur. Page d’accueil, page d’inscription, page utilisateur, page d’administration.
 -	Elaboration du système d’inscription, connexion, ... Donc des fonctionnalités basiques d’un site. Sur les pages respectives.
--	Mise en place des fonctionnalités de la page admin. Affichage et approbation des demandes d’inscriptions.
+-	Mise en place des fonctionnalités de la page admin. Affichage et approbation des demandes d’inscriptions ainsi que l'interface servant à l'edition de la liste des places.
 -	Elaboration du système de réservation aléatoire sur la page utilisateur. Ensuite l’affichage des places disponibles puis de l’historique des réservations.
 -	Mise en place du système de mise en attente. Et de l’affichage du rang dans la file sur la page utilisateur puis de la file en elle-même sur la page admin. 
 -	Sur la page admin, affichage de la liste d’attente puis de la liste de l’historique des réservations.
