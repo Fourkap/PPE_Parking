@@ -141,7 +141,6 @@ Création de Trello un outils permettant un travail collaboratif
 # Pistes de réflexions techniques
 
 -	Faire un système de demande d'inscription (simple formulaire avec ajout dans la table user mais avec un niveau 1 signifiant qu’il n’est pas validé par l’admin)
--	Mettre en place une fonction mot de passe perdu (fonctionnement avec un systèle de token)
 -	Afficher la place qui est attribuée et celles qui l’ont été par le passé (afficher une table avec une requête cherchant dans la table réservation avec l’id_u)
 -	Un système de réservation de place (simple bouton qui entre une ligne dans la table réservation une ligne avec une date_resa et une id_p. Dans le cas où il y a au moins une place avec etat_p = 1 l’id_p est attribuée aléatoirement parmi elles)
 -	Afficher son rang dans la file d’attente (une requête qui sélectionne dans la table réservation toutes les réservations qui n’ont pas de date-debut, puis donne la position dans la table de cet utilisateur)
