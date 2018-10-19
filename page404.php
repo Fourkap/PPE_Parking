@@ -1,0 +1,1 @@
+<?php echo ' erreur 404 page non trouvée '; 
