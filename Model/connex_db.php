@@ -1,12 +1,11 @@
 <?php
 
+    require'variables-environnement.php';
 
+    echo $db ;
+    echo $user ;
+    echo $password ;
 
-    require_once('variables-environnement.php');
-
-    function dbConnect()
-
-        {
             try
             {
                 $db = new PDO("mysql:host=localhost;dbname=$db;charset=utf8","$user","$password");
@@ -16,20 +15,3 @@
             {
             die("Base de données non trouvée");
             }
-
-        }
-
-    require'variables-environnement.php';
-
-    echo $db ;
-    echo $user ;
-    echo $password ;
-
-    try
-    {
-        $bdd = new PDO("mysql:host=localhost;dbname=parking;charset=utf8","root","");
-    }
-    catch(Exception $e)
-    {
-        die("Base de données non trouvée");
-    }

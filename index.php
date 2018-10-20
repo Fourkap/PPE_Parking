@@ -2,7 +2,12 @@
 
 
 session_start();
+<<<<<<< HEAD
     require 'Model/connex_db.php';
+=======
+
+=======
+>>>>>>> 15ec490419502e5f39508b1b89d1c7d181907cb2
 
 define('WEBROOT', dirname(__FILE__));
 define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
