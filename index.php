@@ -2,7 +2,7 @@
 
 
 session_start();
-    require 'Model/connex_db.php';
+
 =======
 
 define('WEBROOT', dirname(__FILE__));
