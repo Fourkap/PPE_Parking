@@ -15,7 +15,7 @@ define('CORE',ROOT.DS.'core');
 
 
 
-    require 'Model/connex_db.php';
+  
 
 
 

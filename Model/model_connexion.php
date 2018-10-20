@@ -5,7 +5,7 @@
 		$login = $_POST['login'];
 		$mdp = sha1($_POST['mdp']);
 
-		$requete = $bdd->query("SELECT * FROM users WHERE login = '".$login."'
+		$requete = $db->query("SELECT * FROM users WHERE login = '".$login."'
 								AND mdp = '".$mdp."'");
 
 		if($reponse = $requete->fetch())

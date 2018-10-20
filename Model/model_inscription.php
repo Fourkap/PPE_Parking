@@ -1,22 +1,22 @@
 <?php
 
-if(isset($_POST['submit']))
+if(isset($_POST['submit_inscription']))
 {
 
 
-$login = $_POST['login'];
+
 $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];
-$email = $_POST['email'];
-$adresse = $_POST['adresse'];
+$mail = $_POST['mail'];
 $mdp = sha1($_POST['mdp']);
 $mdp2 = sha1($_POST['mdp2']);
 
-if (!empty($_POST['login']) AND !empty($_POST['email']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2']) AND !empty($_POST['prenom']) AND !empty($_POST['nom'] AND !empty($_POST['adresse']) AND ($mdp == $mdp2)))
+if (!empty($_POST['mail']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2']) AND !empty($_POST['prenom']) AND !empty($_POST['nom']) AND ($mdp == $mdp2))
+
 {
 
-$requete = $bdd->query("INSERT INTO users(login,mdp,email,adresse,nom,prenom,date_inscription) VALUES('$login','$mdp','$email','$adresse','$nom','$prenom', CURDATE())");
-header ("location:index.php");
+$requete = $db->query("INSERT INTO users(mdp,mail,nom,prenom) VALUES('$mdp','$mail','$nom','$prenom')");
+
 }
 
 
@@ -34,5 +34,3 @@ else
   <strong>Veuillez remplir tous les champs</strong>
 </div>';
 }
-
-?>
