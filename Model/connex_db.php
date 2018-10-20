@@ -4,7 +4,7 @@
 
     echo $db ;
     echo $user ;
-    echo $password <br>;
+    echo $password ;
 
     try
     {
