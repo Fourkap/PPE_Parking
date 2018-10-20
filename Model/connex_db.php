@@ -1,10 +1,10 @@
 <?php
 
-    echo "connexion bdd est là";
+    
     require_once('variables-environnement.php');
 
-    function dbConnect() 
-    
+    function dbConnect()
+
         {
             try
             {
@@ -15,5 +15,5 @@
             {
             die("Base de données non trouvée");
             }
-        
+
         }
