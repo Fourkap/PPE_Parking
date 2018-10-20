@@ -1,22 +1,22 @@
 <?php
 
-<<<<<<< HEAD
+
 session_start();
     require 'Model/connex_db.php';
 =======
->>>>>>> 319e684309154843aa143afd2c44bb77bf717839
+
 define('WEBROOT', dirname(__FILE__));
 define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
 define('ROOT', dirname(WEBROOT));
 define('DS', DIRECTORY_SEPARATOR);
 define('CORE',ROOT.DS.'core');
 
-<<<<<<< HEAD
-=======
+
+
     require 'Model/connex_db.php';
 
 
->>>>>>> 319e684309154843aa143afd2c44bb77bf717839
+
     if(!isset($_GET['p']) || $_GET['p'] == "")
   {
     $_GET["p"] = 'controller_accueil';

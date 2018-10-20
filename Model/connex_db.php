@@ -1,7 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-    
+
+
     require_once('variables-environnement.php');
 
     function dbConnect()
@@ -18,7 +18,7 @@
             }
 
         }
-=======
+
     require'variables-environnement.php';
 
     echo $db ;
@@ -32,6 +32,4 @@
     catch(Exception $e)
     {
         die("Base de données non trouvée");
-    } 
-
->>>>>>> 319e684309154843aa143afd2c44bb77bf717839
+    }
