@@ -1,19 +1,17 @@
 <?php
 
-    echo "connexion bdd est là";
-    require_once('variables-environnement.php');
+    require'variables-environnement.php';
 
-    function dbConnect() 
-    
-        {
-            try
-            {
-                $db = new PDO("mysql:host=localhost;dbname=$db;charset=utf8","$user","$password");
-                return $db;
-            }
-            catch(Exception $e)
-            {
-            die("Base de données non trouvée");
-            }
-        
-        }
+    echo $db ;
+    echo $user ;
+    echo $password <br>;
+
+    try
+    {
+        $bdd = new PDO("mysql:host=localhost;dbname=parking;charset=utf8","root","");
+    }
+    catch(Exception $e)
+    {
+        die("Base de données non trouvée");
+    } 
+

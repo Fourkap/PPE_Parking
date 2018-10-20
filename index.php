@@ -2,14 +2,15 @@
     
 session_start();
 
-    require 'Model/connex_db.php';
-
 define('WEBROOT', dirname(__FILE__));
 define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
 define('ROOT', dirname(WEBROOT));
 define('DS', DIRECTORY_SEPARATOR);
 define('CORE',ROOT.DS.'core');
-    
+
+    require 'Model/connex_db.php';
+
+
     if(!isset($_GET['p']) || $_GET['p'] == "")
   {
     $_GET["p"] = 'controller_accueil';
