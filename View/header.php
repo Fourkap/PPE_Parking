@@ -41,12 +41,12 @@
                         }
                         else { ?>
                                 <li class="nav-link">
-                              <?php require "Controller/controller_connexion.php"; ?>
+                              <?php require "Controller/controllerConnexion.php"; ?>
                               </li>
                                 <li class="nav-link">
-                                  <?php require "Controller/controller_inscription.php"; ?>
+                                  <?php require "Controller/controllerInscription.php"; ?>
                                 </li>
-                                
+
                              <?php } ?>
 
 

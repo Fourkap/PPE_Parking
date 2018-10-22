@@ -4,7 +4,6 @@ if(isset($_POST['submit_inscription']))
 {
 
 
-
 $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];
 $mail = $_POST['mail'];

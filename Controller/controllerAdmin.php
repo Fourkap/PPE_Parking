@@ -1,33 +1,33 @@
 <?php
+  
 
+ require("Model/modelAdmin.php");
 
- require("Model/model_Admin.php");
-
-/*
+/* 
 if($_SESSION['niveau'] == 3)
-   */
+   */ 
     if(3 == 3)
-    {
+    { 
         $rs = afficheReservation();
-
+        
         $nbm = affichePlaceTot();
         $plm = afficheLibre();
         $prm = afficheReserve();
         $pim = afficheIndisponible();
-
+        
         $nb = afficheNombrePlaceTot();
         $pl = afficheNombreLibre();
         $pr = afficheNombreReserve();
         $pi = afficheNombreIndisponible();
-
-        $us = afficheUserAll();
-        $uat = afficheUserAttente();
-        $ua = afficheUserApprouve();
-        $uap= afficheUserAvecPlace();
-        $usp = afficheUserSansPlace();
-        $ub = afficheUserBanni();
-        $uf = afficheUserDansFile();
-
+        
+        $us = afficheUserAll();  
+        $uat = afficheUserAttente(); 
+        $ua = afficheUserApprouve();   
+        $uap= afficheUserAvecPlace();  
+        $usp = afficheUserSansPlace(); 
+        $ub = afficheUserBanni(); 
+        $uf = afficheUserDansFile(); 
+                        
     }
     else
     {
@@ -66,7 +66,7 @@ if($_SESSION['niveau'] == 3)
             ajoutPlace();
             header("location:".BASE_URL."/controllerAdmin");
         }
-    }
+    }          
     if(isset($_POST['afficheUserResa']))
     {
 
@@ -76,7 +76,7 @@ if($_SESSION['niveau'] == 3)
 
     if(isset($_POST['affichePlaceResa']))
     {
-        $rp = afficheUneReservationParPlace($_POST['id_p']);
+        $rp = afficheUneReservationParPlace($_POST['id_p']); 
     }
 
 
@@ -85,11 +85,11 @@ if($_SESSION['niveau'] == 3)
         $uu = rechercheUser($_POST['id_u']);
     }
 
-// ajout de place dans la table
+// ajout de place dans la table 
 
 
 if(isset($_POST['demande_ajout']))
-{
+{    
     $nb = afficheNombrePlaceTot();
     $pl = afficheNombreLibre();
     $pr = afficheNombreReserve();
@@ -107,13 +107,13 @@ if(isset($_POST['demande_ajout']))
         $nbPlaceActiveNecessaire = $npdem - $nbPlaceActive;
         $nbPlaceInactive = $nb['nbPlaceTot'] - $nbPlaceActive;
         if($nbPlaceNecessaire > 0)
-        {
+        {   
             indIntoDispo();
             while($nbPlaceNecessaire > 0)
             {
                 ajoutPlace();
                 $nbPlaceNecessaire--;
-            }
+            }            
         }
         elseif($nbPlaceNecessaire < 0 && $nbPlaceActiveNecessaire < 0)
         {
@@ -127,5 +127,6 @@ if(isset($_POST['demande_ajout']))
         dispoIntoInd($nbPlaceInactiveNecessaire);
         }
     }
-}
-    require("View/view_Admin.php");
+} 
+    require("View/viewAdmin.php");
+

@@ -3,9 +3,7 @@
 
 session_start();
 
-    require 'Model/connex_db.php';
-
-
+    require 'Model/connexDb.php';
 
 define('WEBROOT', dirname(__FILE__));
 define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));
@@ -13,21 +11,15 @@ define('ROOT', dirname(WEBROOT));
 define('DS', DIRECTORY_SEPARATOR);
 define('CORE',ROOT.DS.'core');
 
-
-
-
-
-
-
-    if(!isset($_GET['p']) || $_GET['p'] == "")
+if(!isset($_GET['p']) || $_GET['p'] == "")
   {
-    $_GET["p"] = 'controller_accueil';
+    $_GET["p"] = 'controllerAccueil';
   }
   else
   {
     if(!file_exists("Controller/".$_GET['p'].".php"))
     {
-      $_GET['p'] = 'controller_404';
+      $_GET['p'] = 'controller404';
     }
     else
     {
@@ -39,5 +31,6 @@ define('CORE',ROOT.DS.'core');
         $content = ob_get_contents();//recupere la page appelée
     ob_end_clean();//relance l'affichage
 require "layout.php";
+
 ?>
-<a href="<?=BASE_URL;?>/controller_Admin">Page admin</a>
+<a href="<?=BASE_URL;?>/controllerAdmin">Page admin</a>

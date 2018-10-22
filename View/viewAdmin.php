@@ -1,21 +1,21 @@
 
 <?= " <br>   vu admin   ";?>
-<a href="<?=BASE_URL;?>/controller_Admin">REFRESH</a>
-
+<a href="<?=BASE_URL;?>/controllerAdmin">REFRESH</a>
+    
 <h1>Espace d'édition du parking : </h1> <br>
      <h2>Nombre de places total :  <?php echo $nb['nbPlaceTot']; ?> </h2><br>
       <h2>Affichage places : <br></h2>
 <?php
 
 echo $nb['nbPlaceTot']."<br>";
-echo $pl['nbPlaceLibre']."<br>";
-echo $pr['nbPlaceReserve']."<br>";
-echo $pi['nbPlaceIndis']."<br>";
+echo $pl['nbPlaceLibre']."<br>";        
+echo $pr['nbPlaceReserve']."<br>";        
+echo $pi['nbPlaceIndis']."<br>"; 
 
     //formulaire d'affichage des places
 
 if(!isset($_POST['InputaffichePlace'])) {
-    echo "Choisir une option pour afficher la liste des places selon ce critère"; }?>
+    echo "Choisir une option pour afficher la liste des places selon ce critère"; }?> 
 <form action="" method="post">
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1" name="places">
@@ -66,7 +66,7 @@ if(isset($_POST['InputaffichePlace']))
         echo "id place : ".$value['id_p']." num place : ".$value['num_p']." etat place : ".$value['etat_p']."<br>";
     }
             break;
-
+            
         }
     }?>
 <br>
@@ -78,15 +78,15 @@ if(isset($_POST['InputaffichePlace']))
 
 <h1>Espace d'édition des utilisateurs : </h1> <br>
 
-
+  
       <h2>Affichage utilisateurs : <br></h2>
-
-      <?php
+      
+      <?php 
 
 
 if(!isset($_POST['InputafficheUser'])) {
-    echo "Choisir une option pour afficher la liste des utilisateurs selon ce critère"; }?>
-
+    echo "Choisir une option pour afficher la liste des utilisateurs selon ce critère"; }?> 
+    
 <form action="" method="post">
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" id="inlineCheckbox5" value="option5" name="users">
@@ -161,33 +161,33 @@ if(isset($_POST['InputafficheUser']))
         echo "nom : ".$value['nom']." prénom : ".$value['prenom']."
             <a href='index.php?p=controllerAdmin&id=".$value['id_u']."'>Supprimer</a> <a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a><br>";
     }
-
+            
         }
     }?>
-
+      
 <form action="" method="post" class="text-middle">
                 <label >Id de l'utilisateur recherché : </label>
                 <input type="text" name="id_u">
                 <input type="submit" name="search_user">
-            </form>
+            </form>      
 <?php
 if(isset($_POST['search_user'])){
 foreach($uu as $key => $value)
         {
             echo "nom : ".$value['nom']." prénom : ".$value['prenom']."
             <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a> <a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a><br>";
-        }
+        } 
 } ?>
-
+      
 <h1>Espace d'édition des réservations : </h1> <br>
 <h2>Affichage reservations : <br></h2>
-
+   
      <?php
 
 
 if(!isset($_POST['InputafficheResa'])) {
-    echo "Choisir une option pour afficher la liste des réservations selon ce critère"; }?>
-
+    echo "Choisir une option pour afficher la liste des réservations selon ce critère"; }?> 
+ 
 <form action="" method="post">
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" id="inlineCheckbox11" value="option11" name="resa">
@@ -207,18 +207,18 @@ if(isset($_POST['InputafficheResa']))
         $option = $_POST['resa'];
     switch ($option) {
         case 'option11':
-
+            
     foreach($rs as $key => $value)
     {
         echo" id resa : ".$value['id_r']." num place : ".$value['num_p']." id place : ".$value['id_p']." prenom user : ".$value['prenom']." date resa ".$value['date_resa']." date début : ".$value['date_debut']." date fin ".$value['date_fin']." <br>";
     }
         case 'option12':
-
+            
     foreach($rs as $key => $value)
     {
         echo" id resa : ".$value['id_r']." num place : ".$value['num_p']." id place : ".$value['id_p']." prenom user : ".$value['prenom']." date resa ".$value['date_resa']." date début : ".$value['date_debut']." date fin ".$value['date_fin']." <br>";
     }
-
+            
         }
     }?>
 <form action="" method="post" class="text-middle">
@@ -238,11 +238,11 @@ foreach($ru as $key => $value)
                 <label >Recherche de réservation par id de place :</label>
                 <input type="text" name="id_p">
                 <input type="submit" name="affichePlaceResa">
-            </form>
+            </form>       
 <?php
 if(isset($_POST['affichePlaceResa'])){
 foreach($rp as $key => $value)
         {
             echo" id resa : ".$value['id_r']." num place : ".$value['num_p']." id place : ".$value['id_p']." prenom user : ".$value['prenom']." date resa ".$value['date_resa']." date début : ".$value['date_debut']." date fin ".$value['date_fin']." <br>";
-        }
-}
+        } 
+} 
