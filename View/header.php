@@ -46,6 +46,7 @@
                                 <li class="nav-link">
                                   <?php require "Controller/controller_inscription.php"; ?>
                                 </li>
+                                
                              <?php } ?>
 
 

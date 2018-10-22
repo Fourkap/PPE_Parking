@@ -15,7 +15,7 @@ define('CORE',ROOT.DS.'core');
 
 
 
-  
+
 
 
 
@@ -39,3 +39,5 @@ define('CORE',ROOT.DS.'core');
         $content = ob_get_contents();//recupere la page appelée
     ob_end_clean();//relance l'affichage
 require "layout.php";
+?>
+<a href="<?=BASE_URL;?>/controller_Admin">Page admin</a>
