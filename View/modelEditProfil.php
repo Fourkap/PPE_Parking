@@ -16,4 +16,4 @@ if(isset($_POST['submit_update']))
 }
 
 $requete = $db->query("SELECT * FROM users WHERE id_u = ".$_SESSION['id_u']);
-$reponse = $requete->fetch();
+	$reponse = $requete->fetch();

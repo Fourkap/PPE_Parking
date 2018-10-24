@@ -5,7 +5,7 @@
 
     if(isset($_SESSION['connecte']))
     {
-        $id_u = $_SESSION['id'];
+        $id_u = $_SESSION['id_u'];
         $reponse = getId($id_u);
     }
 require "View/viewAccueil.php";

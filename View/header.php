@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title></title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  </head>
-
   <body>
 
     <!-- Navigation -->
@@ -25,27 +8,30 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <ul>
-          <?php
+<?php
                         if(isset($_SESSION['connecte']))
                         {
                         ?>
-                                <a href="<?=BASE_URL;?>/userController"><li class="col-xs-2 col-md-2 liste"><button type="button" class="bouton"> Mon compte</button></li></a>
-                                <a href="<?=BASE_URL;?>/logout"><li class="col-xs-2 col-md-2 liste"> <button type="button" class="bouton">Déconnexion</button></li></a>
+
+                                <a href="<?=BASE_URL;?>/controllerProfil"><button type="button" class="btn btn-primary">mon profil</button></a>
+                                <a href="<?=BASE_URL;?>/controllerLogout"><button type="button" class="btn btn-danger">Déconnexion</button></a>
+
                         <?php
-                            if($_SESSION['lvl'] == 3)
+                            if($_SESSION['niveau'] == 3)
                             {
                         ?>
-                                <a href="<?=BASE_URL;?>/adminController"><li class="col-xs-2 col-md-2 liste"><button type="button" class="bouton"> Gestion Admin</button></li></a> ""
+                                <a href="<?=BASE_URL;?>/adminController"><button type="button" class="btn btn-primary"> Gestion Admin</button></a> ""
                         <?php
                             }
                         }
                         else { ?>
-                                <li class="nav-link">
-                              <?php require "Controller/controllerConnexion.php"; ?>
-                              </li>
-                                <li class="nav-link">
-                                  <?php require "Controller/controllerInscription.php"; ?>
-                                </li>
+
+                                  <a href="<?=BASE_URL;?>/controllerConnexion"><button type="button" class="btn btn-primary">Se connecter</button></a>
+
+
+
+                                    <a href="<?=BASE_URL;?>/controllerInscription"><button type="button" class="btn btn-primary">Inscription</button></a>
+
 
                              <?php } ?>
 

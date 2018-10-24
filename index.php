@@ -33,4 +33,3 @@ if(!isset($_GET['p']) || $_GET['p'] == "")
 require "layout.php";
 
 ?>
-<a href="<?=BASE_URL;?>/controllerAdmin">Page admin</a>

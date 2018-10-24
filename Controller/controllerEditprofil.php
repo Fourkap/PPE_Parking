@@ -1,3 +1,4 @@
 <?php
-require "../Model/model_editprofil.php";
-require "../View/view_editprofil.php";
+require "Model/modelEditprofil.php";
+
+require "View/viewEditprofil.php";
