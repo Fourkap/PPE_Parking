@@ -1,5 +1,5 @@
 <?= " <br>   vu reserver place   ";?>
-<a href="<?=BASE_URL;?>/controllerReserverPlace">REFRESH</a>
+<a href="<?=BASE_URL;?>/controllerProfil">REFRESH</a>
 
 
 <form action="#" method="post">

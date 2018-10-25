@@ -1,12 +1,8 @@
 <?php
-  
 
  require("Model/modelAdmin.php");
 
-/* 
-if($_SESSION['niveau'] == 3)
-   */ 
-    if(3 == 3)
+    if($_SESSION['niveau'] == 3)
     { 
         $rs = afficheReservation();
         
