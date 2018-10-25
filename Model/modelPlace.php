@@ -59,7 +59,7 @@
     function afficheNombreReserve() //retourne places reservées
     {
         global $db;
-        $requete = $db->prepare("SELECT count(*) AS nbPlaceReserve FROM place WHERE etat_p = 2");
+        $requete = $db->prepare("SELECT count(*) AS nbPlaceReserve FROM place WHERE etat_p = 2 OR etat_p = 4");
         $requete->execute();
         return $requete->fetch();
     }
@@ -67,7 +67,7 @@
     function afficheReserve() //retourne places reservées
     {
         global $db;
-        $requete = $db->prepare("SELECT * FROM place WHERE etat_p = 2");
+        $requete = $db->prepare("SELECT * FROM place WHERE etat_p = 2 OR etat_p = 4");
         $requete->execute();
         return $requete->fetchAll();
     }

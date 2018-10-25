@@ -4,7 +4,7 @@
 session_start();
 
     require 'Model/connexDb.php';
-    require('CheckStatuReservation.php');
+   // require('CheckStatuReservation.php');
 
 define('WEBROOT', dirname(__FILE__));
 define('BASE_URL', dirname($_SERVER['SCRIPT_NAME']));

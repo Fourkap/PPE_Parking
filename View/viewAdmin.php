@@ -8,8 +8,8 @@
 <?php
 
 echo $nb['nbPlaceTot']."<br>";
-echo $pl['nbPlaceLibre']."<br>";        
-echo $pr['nbPlaceReserve']."<br>";        
+echo $pl['nbPlaceLibre']."<br>";    
+echo $pr['nbPlaceReserve']."<br>";     
 echo $pi['nbPlaceIndis']."<br>"; 
 
     //formulaire d'affichage des places
@@ -71,7 +71,7 @@ if(isset($_POST['InputaffichePlace']))
     }?>
 <br>
 <form action="" method="post" class="text-middle">
-                <label >Nombre de place à ajouter : </label>
+                <label >Nombre de place utilisable au total voulu : </label>
                 <input type="text" name="npdem">
                 <input type="submit" name="demande_ajout">
             </form>
@@ -165,7 +165,7 @@ if(isset($_POST['InputafficheUser']))
         }
     }?>
       
-<form action="" method="post" class="text-middle">
+<form action="#" method="post" class="text-middle">
                 <label >Id de l'utilisateur recherché : </label>
                 <input type="text" name="id_u">
                 <input type="submit" name="search_user">

@@ -94,14 +94,19 @@ if(isset($_POST['demande_ajout']))
     $npdem = $_POST['npdem'];
     if($npdem < $pr['nbPlaceReserve'])
     {
-        echo "Ce nombre est inférieur au nombre de place réservées en ce moment !";
+        echo "Ce nombre de place est inférieur au nombre de place réservées en ce moment !";
     }
     else
     {
-        $nbPlaceActive = $pl['nbPlaceLibre'] + $pr['nbPlaceReserve'];
+        //$nbPlaceActive = $pl['nbPlaceLibre'] + $pr['nbPlaceReserve'];
+        
         $nbPlaceNecessaire = $npdem - $nb['nbPlaceTot'];
-        $nbPlaceActiveNecessaire = $npdem - $nbPlaceActive;
-        $nbPlaceInactive = $nb['nbPlaceTot'] - $nbPlaceActive;
+        
+        $nbPlaceLibreNecessaire = $nbPlaceNecessaire - $pr['nbPlaceReserve'];
+        //$nbPlaceActiveNecessaire = $npdem - $nbPlaceActive;
+        
+        //$nbPlaceInactive = $nb['nbPlaceTot'] - $nbPlaceActive;
+        
         if($nbPlaceNecessaire > 0)
         {   
             indIntoDispo();
@@ -111,17 +116,17 @@ if(isset($_POST['demande_ajout']))
                 $nbPlaceNecessaire--;
             }            
         }
-        elseif($nbPlaceNecessaire < 0 && $nbPlaceActiveNecessaire < 0)
+        elseif($nbPlaceNecessaire < 0 /*&& $nbPlaceActiveNecessaire < 0*/)
         {
-        $nbPlaceTrop = $nbPlaceActiveNecessaire * -1;
         indIntoDispo();
+        $nbPlaceTrop = $nbPlaceNecessaire * -1;
         dispoIntoInd($nbPlaceTrop);
-        }
+        }/*
         elseif($nbPlaceNecessaire < 0 && $nbPlaceActiveNecessaire > 0)
         {
         $nbPlaceInactiveNecessaire = $nbPlaceInactive - $nbPlaceActiveNecessaire;
         dispoIntoInd($nbPlaceInactiveNecessaire);
-        }
+        }*/
     }
 } 
     require("View/viewAdmin.php");
