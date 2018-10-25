@@ -20,7 +20,7 @@
                             if($_SESSION['niveau'] == 3)
                             {
                         ?>
-                                <a href="<?=BASE_URL;?>/adminController"><button type="button" class="btn btn-primary"> Gestion Admin</button></a> ""
+                                <a href="<?=BASE_URL;?>/controllerAdmin"><button type="button" class="btn btn-primary"> Gestion Admin</button></a> ""
                         <?php
                             }
                         }

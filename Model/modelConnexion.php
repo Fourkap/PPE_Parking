@@ -16,6 +16,7 @@
 			$_SESSION['prenom'] = $reponse['prenom'];
 			$_SESSION['nom'] = $reponse['nom'];
 			$_SESSION['mail'] = $reponse['mail'];
+			$_SESSION['etat_u'] = $reponse['etat_u'];
 
 			header ("location:index.php");
 
@@ -28,3 +29,4 @@
 		}
 	}
 ?>
+ 
