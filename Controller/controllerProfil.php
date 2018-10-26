@@ -30,7 +30,7 @@ if($etat_u = 2 || $etat_u = 4)
 {
     $statu = 'en réservation';
 }
-if(isset($_POST['Reserver']) && $etat_u == 1)
+if(isset($_POST['Reserver']) && $etat_u == 1 && $niveau == 2)
 {
     
     if($placeLibre > 0) //si il y a au moins une place disponible 
@@ -94,7 +94,7 @@ if(isset($_POST['Reserver']) && $etat_u == 1)
         echo "La file d'attente est pleine, veuillez patientez !";
     }
 }
-elseif($etat_u != 1)
+elseif($etat_u != 1 || $niveau != 2)
 {
     echo "Vous avez déjà réservé une place !!";
 }
