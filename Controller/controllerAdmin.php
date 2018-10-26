@@ -22,8 +22,7 @@
         $uap= afficheUserAvecPlace();  
         $usp = afficheUserSansPlace(); 
         $ub = afficheUserBanni(); 
-        $uf = afficheUserDansFile(); 
-                        
+        $uf = afficheUserDansFile();                   
     }
     else
     {
@@ -39,6 +38,12 @@
     if(isset($_GET['idban']))
     {
         bannitUser($_GET['idban']);
+        header("location:".BASE_URL."/controllerAdmin");
+    }
+
+    if(isset($_GET['idban']))
+    {
+        setApprouve($_GET['idapp']);
         header("location:".BASE_URL."/controllerAdmin");
     }
 

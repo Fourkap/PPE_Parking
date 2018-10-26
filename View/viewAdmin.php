@@ -125,41 +125,41 @@ if(isset($_POST['InputafficheUser']))
             foreach($us as $key => $value)
     {
         echo "nom : ".$value['nom']." prénom : ".$value['prenom']."
-            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a> <a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a><br>";
+            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a>/<a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a>/<a href='index.php?p=controllerAdmin&idapp=".$value['id_u']."'>Approuver</a><br>";
     }
             break;
         case 'option6':
             foreach($uat as $key => $value)
     {
         echo "nom : ".$value['nom']." prénom : ".$value['prenom']."
-            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a> <a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a><br>";
+            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a>/<a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a>/<a href='index.php?p=controllerAdmin&idapp=".$value['id_u']."'>Approuver</a><br>";
     }
             break;
         case 'option7':
             foreach($ua as $key => $value)
     {
         echo "nom : ".$value['nom']." prénom : ".$value['prenom']."
-            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a> <a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a><br>";
+            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a>/<a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a>/<a href='index.php?p=controllerAdmin&idapp=".$value['id_u']."'>Approuver</a><br>";
     }
             break;
         case 'option8':
             foreach($uap as $key => $value)
     {
         echo "nom : ".$value['nom']." prénom : ".$value['prenom']."
-            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a> <a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a><br>";
+            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a>/<a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a>/<a href='index.php?p=controllerAdmin&idapp=".$value['id_u']."'>Approuver</a><br>";
     }
             break;
         case 'option9':
             foreach($uf as $key => $value)
     {
         echo "nom : ".$value['nom']." prénom : ".$value['prenom']."
-            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a> <a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a><br>";
+            <a href='index.php?p=controllerAdmin&iddelete=".$value['id_u']."'>Supprimer</a>/<a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a>/<a href='index.php?p=controllerAdmin&idapp=".$value['id_u']."'>Approuver</a><br>";
     }
         case 'option10':
             foreach($ub as $key => $value)
     {
         echo "nom : ".$value['nom']." prénom : ".$value['prenom']."
-            <a href='index.php?p=controllerAdmin&id=".$value['id_u']."'>Supprimer</a> <a href='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a><br>";
+            <a href='index.php?p=controllerAdmin&id=".$value['id_u']."'>Supprimer</a> <a hr/f='index.php?p=controllerAdmin&idban=".$value['id_u']."'>Bannir</a>/<a href='index.php?p=controllerAdmin&idapp=".$value['id_u']."'>Approuver</a><br>";
     }
             
         }

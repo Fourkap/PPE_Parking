@@ -215,3 +215,11 @@
         $requete->execute();
         return $requete->fetchAll();
     }
+
+    function setApprouve()
+    {
+        global $db;
+        $requete = $db->prepare("UPDATE users SET niveau = 2");
+        $requete->execute();
+        return $requete->fetch();        
+    }
