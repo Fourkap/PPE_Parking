@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 function placeHasard() //retourne une place disponible au hasard
 {

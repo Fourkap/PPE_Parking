@@ -2,6 +2,9 @@
 <h2>Voici l'historique des reservations vous concerant :<br> </h2>
 
 <?php
+
+if($hist)
+{
 foreach($hist as $value)
 { ?>
   <div class="container">
@@ -17,6 +20,13 @@ foreach($hist as $value)
     </div>
     </div>
     <br>
-<?php   }
+    
+<?php  
+} 
+}
+else
+{
+    echo"Vous n'avez pas réservé de place.";
+}
 echo '<br>';
 ?>

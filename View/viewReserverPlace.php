@@ -1,4 +1,12 @@
-<div class="container">
+<?php
+
+        echo "Il y a ".$placeLibre." places libres actuellement.<br>";
+        echo "Vous êtes actuellement ".$statu.".";
+
+?>
+   
+
+   <div class="container">
     <div class"row justify-content-center">
         <div class="col-6">
            <a href="<?=BASE_URL;?>/controllerProfil">REFRESH</a>

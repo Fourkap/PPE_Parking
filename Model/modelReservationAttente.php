@@ -12,12 +12,12 @@
     {
         global $db;
 
-        $requete = $db->prepare("SELECT r.id_p, MIN(r.date_resa), r.date_debut, r.date_fin FROM place p, reservation r WHERE p.etat_p = 2 GROUP BY id_p");
+        $requete = $db->prepare("SELECT r.id_p, MIN(r.date_resa), r.date_debut, r.date_fin FROM place p, reservation r WHERE p.etat_p = 2 GROUP BY id_p, r.date_debut, r.date_fin");
         $requete->execute();
-        $tableau = $requete->fetchAll();
-        $idProchainePlace = $tableau['0']['id_p'];
-        $dateResaProchainePlace = $tableau['0']['MIN(r.date_resa)'];
-        $dateFinProchainePlace = $tableau['0']['date_fin'];
+        $tableau = $requete->fetch();
+        $idProchainePlace = $tableau['id_p'];
+        $dateResaProchainePlace = $tableau['MIN(r.date_resa)'];
+        $dateFinProchainePlace = $tableau['date_fin'];
         $array = [
         "idProPlace" => "$idProchainePlace",
         "dateResaProPlace" => "$dateResaProchainePlace",
